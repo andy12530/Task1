@@ -1,0 +1,5 @@
+RewriteEngine On
+RewriteBase /
+RewriteRule ^(\w+)\/(\w+(\.\w+)?)\/(\w+(\.\w+)?)$   /cal.php?type=$1&num1=$2&num2=$4
+RewriteRule ^(\w+)\/(\w+(\.\w+)?)$  /cal.php?type=$1&num1=$2
+RewriteRule ^(\w+)\/(\w+(\.\w+)?).*$    /cal.php?type=404
