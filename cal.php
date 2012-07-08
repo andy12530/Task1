@@ -52,6 +52,8 @@ if($calType == "mult"){
         echo json_encode("Invalid input b");
         exit;
     }
+    $num1 = (String)$num1;//转换数字为字符串
+    $num2 = (String)$num2;
     $result =  $num1 * $num2;
 } else if($calType == "square"){
     $num1 = (String)$num1;//转换数字为字符串
